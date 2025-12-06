@@ -5,7 +5,8 @@ import { Cake, PartyPopper } from 'lucide-react';
 
 const App: React.FC = () => {
   // Estado para gerenciar a fonte da imagem
-  const [imgSrc, setImgSrc] = useState("logo.png");
+  // IMPORTANTE: A barra '/' no início indica que a imagem está na pasta public
+  const [imgSrc, setImgSrc] = useState("/logo.png");
   // Estado para saber se todas as tentativas falharam
   const [imgError, setImgError] = useState(false);
   
@@ -30,13 +31,13 @@ const App: React.FC = () => {
 
   // Lógica inteligente para tentar encontrar a imagem correta
   const handleImageError = () => {
-    // Ordem de tentativa: logo.png -> logo.jpg -> logo.jpeg -> Logo.png -> Fallback
-    if (imgSrc === "logo.png") {
-      setImgSrc("logo.jpg");
-    } else if (imgSrc === "logo.jpg") {
-      setImgSrc("logo.jpeg");
-    } else if (imgSrc === "logo.jpeg") {
-      setImgSrc("Logo.png"); // Tenta maiúsculo
+    // Ordem de tentativa: /logo.png -> /logo.jpg -> /logo.jpeg -> /Logo.png -> Fallback
+    if (imgSrc === "/logo.png") {
+      setImgSrc("/logo.jpg");
+    } else if (imgSrc === "/logo.jpg") {
+      setImgSrc("/logo.jpeg");
+    } else if (imgSrc === "/logo.jpeg") {
+      setImgSrc("/Logo.png"); // Tenta maiúsculo
     } else {
       setImgError(true); // Desiste e mostra o ícone
     }
