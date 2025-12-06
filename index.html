@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa dos Doces Confeitaria</title>
+    
+    <!-- Ícone de Bolo na Aba do Navegador (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Quicksand"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#FFF0F5',  /* Rosa Bebê muito claro (Fundo) */
+                100: '#FFE4E1', /* Rosa da Névoa (Misty Rose) */
+                200: '#FFB6C1', /* Rosa Pastel (Light Pink) */
+                300: '#FF91A4', /* Rosa Suave */
+                400: '#FF69B4', /* Rosa Pink Clássico (Hot Pink) */
+                500: '#FF1493', /* Rosa Pink Forte (Deep Pink - Ação) */
+                600: '#DB7093', /* Rosa Velho (Pale Violet Red) */
+                800: '#C71585', /* Rosa Escuro */
+                900: '#881337',
+              },
+              chocolate: {
+                50: '#EFEBE9',
+                100: '#D7CCC8',
+                800: '#5D4037', /* Marrom Quente (Ao leite) */
+                900: '#3E2723', /* Marrom Escuro (Café) */
+              }
+            },
+            animation: {
+              'float-slow': 'float 8s ease-in-out infinite',
+              'bounce-slow': 'bounce 3s infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFF0F5; /* brand-50 */
+        color: #5D4037; /* chocolate-800 */
+        overflow-x: hidden;
+      }
+
+      /* Animação dos Doces Flutuantes */
+      @keyframes floatUp {
+        0% {
+          transform: translateY(110vh) rotate(0deg) scale(0.8);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(-10vh) rotate(360deg) scale(1);
+          opacity: 0;
+        }
+      }
+
+      .floating-bg-item {
+        position: fixed;
+        z-index: 0;
+        pointer-events: none;
+        animation-name: floatUp;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+        filter: blur(1px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Ponto de Entrada para o Vite -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
