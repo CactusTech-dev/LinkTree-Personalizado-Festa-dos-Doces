@@ -37,7 +37,7 @@ PASTA DO PROJETO/
 └── vite.config.ts
 ```
 
-## 💻 Comandos Locais
+## 💻  Comandos Locais
 
 Para testar no seu computador (requer Node.js instalado):
 
