@@ -116,7 +116,17 @@ const App: React.FC = () => {
 
         {/* Footer */}
         <footer className="mt-12 text-center text-brand-900/70 font-sans text-sm font-medium">
-          <p>desenvolvido pela Cactustechs</p>
+          <p>
+            desenvolvido pela{' '}
+            <a 
+              href="https://www.instagram.com/cactus_software?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-brand-600 hover:text-brand-800 underline transition-colors duration-200"
+            >
+              Cactustechs
+            </a>
+          </p>
           <p className="mt-2 flex items-center justify-center gap-1">
             <Cake size={14} className="text-brand-500"/>
             O melhor sabor da festa
