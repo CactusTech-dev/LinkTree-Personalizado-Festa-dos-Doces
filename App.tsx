@@ -116,7 +116,7 @@ const App: React.FC = () => {
 
         {/* Footer */}
         <footer className="mt-12 text-center text-brand-900/70 font-sans text-sm font-medium">
-          <p>© {new Date().getFullYear()} {BUSINESS_INFO.name}</p>
+          <p>desenvolvido pela Cactustechs</p>
           <p className="mt-2 flex items-center justify-center gap-1">
             <Cake size={14} className="text-brand-500"/>
             O melhor sabor da festa
