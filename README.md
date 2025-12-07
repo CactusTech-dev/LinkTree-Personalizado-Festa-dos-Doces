@@ -49,3 +49,7 @@ npm run dev
 ## 🎨 Personalização
 
 Edite o arquivo `constants.ts` para mudar telefones, links e textos rapidamente.
+ 
+## 🛠️ Desenvolvido por
+
+Este projeto foi desenvolvido por **CactusTechs** — agradecimentos à equipe pelo design e implementação.
