@@ -117,7 +117,7 @@ const App: React.FC = () => {
         {/* Footer */}
         <footer className="mt-12 text-center text-brand-900/70 font-sans text-sm font-medium">
           <p>
-            desenvolvido pela{' '}
+            © 2025 - Direitos reservados a{' '}
             <a 
               href="https://www.instagram.com/cactus_software?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
               target="_blank" 
