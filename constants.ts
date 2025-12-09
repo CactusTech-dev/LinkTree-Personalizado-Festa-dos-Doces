@@ -6,7 +6,7 @@ export const BUSINESS_INFO = {
   tagline: "A alegria tem sabor de açúcar!",
   description: "Bolos festivos, doces criativos e explosão de sabores para o seu dia.",
   whatsapp: "5585987645184", // Número atualizado
-  address: "R. Urbâno Pinheiro Pímentel, 1562 - Centro, Pacatuba - CE, 61801-270",
+  address: "R. Urbâno Pinheiro Pímentel, 1413 - Centro, Pacatuba - CE, 61801-270",
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -37,8 +37,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     id: 'location',
-    label: 'R. Urbâno Pinheiro Pímentel, 1562 - Pacatuba/CE',
-    url: 'https://www.google.com/maps/search/?api=1&query=R.+Urbâno+Pinheiro+Pímentel,+1562+-+Centro,+Pacatuba+-+CE,+61801-270',
+    label: 'R. Urbâno Pinheiro Pímentel, 1413 - Pacatuba/CE',
+    url: 'https://www.google.com/maps/search/?api=1&query=R.+Urbâno+Pinheiro+Pímentel,+1413+-+Centro,+Pacatuba+-+CE,+61801-270',
     icon: MapPin,
   },
 ];
